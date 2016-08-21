@@ -1,0 +1,2 @@
+The files "ADC_Calibration_PR254.h" and "K600TAnalyseFolders.cpp" are merely included in this folder for completeness in terms of all files that were used/modified during PR254.
+These two files are only used on K600daq during beam weekends for online analysis and is virtually useless anywhere/anytime else. They are locate in /home/online/k600/... on K600daq. Just use the locate command to search for the files.

@@ -1,0 +1,5 @@
+Run 63 seems to be the best calibration file so far.
+Run 64 (only asymmetric run) has 0 gain/0 offset channels because some of the channels
+didn't see 5 or 6 alpha peaks, which are the only two scenarious that the alpha
+calibration code caters for.
+Run 2087 has too few stats. For it to work it would have to be chained. 

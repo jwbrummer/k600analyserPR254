@@ -2,15 +2,9 @@
 ### has been modified specifically for PR254 so that it looks for the unsorted data on my Lenovo external HDD and moves the
 ### sorted data onto Lenovo as well. JWB
 
-### NOTE: A future development may include the use of arrays in this bash code because at the moment the sorter goes through
-### every one of the runs sequentially and can't pick out the 24Mg data runs. Being selective here will save a lot of 
-### analyser time.
-
-#!/bin/bash
-
+#/bin/bash
 
 for COUNT in {63..1080}
-
 
 do
   echo $COUNT

@@ -16,7 +16,7 @@ double gains[128], offsets[128], alpha_E[5] = {5423.15, 5685.37, 6288.08, 6778.3
 void Calibration()
 {
   ofstream mOutput;
-  mOutput.open("CalibParsPR254Run63.dat");
+  mOutput.open("CalibParsPR254Run2087.dat");
 
   TH2F *unCalibADCs = new TH2F("unCalibADCs","unCalibADCs",400,250,4000,160,0,160);
   TH2F *CalibADCs = new TH2F("CalibADCs","CalibADCs",400,250,10000,160,0,160);
@@ -28,7 +28,7 @@ void Calibration()
       gains[i] = 0; offsets[i] = 0;
       TCanvas *c1 = new TCanvas("c1","c1",800,600);
       char buffer[256];
-      sprintf(buffer,"CalibFiles/hADC_%d.root",i);
+      sprintf(buffer,"/home/wiggert/Programs/k600analyserPR254/calibration/calibration-histograms-run2087/hADC_%d.root",i);
       TFile *fin = TFile::Open(buffer);
       TH1F *h = (TH1F*)fin->FindObjectAny("hADC");
 
@@ -89,7 +89,7 @@ void Calibration()
 	}
       else{offsets[i] = 0; gains[i] = 1;}
       mOutput << i << "\t" << offsets[i] << "\t" << gains[i] << endl;
-      sprintf(buffer,"CalibFiles/FithADC_%d.png",i);
+      sprintf(buffer,"/home/wiggert/Programs/k600analyserPR254/calibration/calibration-histograms-run2087/Fit-hADC-Channel-%d.png",i);
       c1->SaveAs(buffer);
 
        for(int j=0;j<h->GetXaxis()->GetNbins();j++)
@@ -98,6 +98,6 @@ void Calibration()
 	}
     }
   mOutput.close();
-  unCalibADCs->SaveAs("unCalibADCs.root");
-  CalibADCs->SaveAs("CalibADCs.root");
+  unCalibADCs->SaveAs("unCalibADCsRun2087.root");
+  CalibADCs->SaveAs("CalibADCsRun2087.root");
 }
