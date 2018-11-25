@@ -968,3 +968,80 @@ Sun Aug 14 19:56:29 2016 [Analyzer,INFO] Program Analyzer on host PC stopped
 Sun Aug 14 19:56:30 2016 [Analyzer,INFO] Program Analyzer on host PC started
 Sun Aug 14 19:56:30 2016 [Analyzer,INFO] Set run number 3125 in ODB
 Sun Aug 14 20:26:29 2016 [Analyzer,INFO] Program Analyzer on host PC stopped
+Thu Nov 30 14:53:00 2017 [ODBEdit,INFO] Program ODBEdit on host PC started
+Thu Nov 30 14:53:58 2017 [ODBEdit,INFO] Program ODBEdit on host PC stopped
+Thu Nov 30 14:54:17 2017 [Analyzer,INFO] Program Analyzer on host PC started
+Thu Nov 30 14:54:26 2017 [ODBEdit,ERROR] [odb.c:1223:db_open_database,ERROR] Removed ODB client 'Analyzer', index 0 because process pid 27199 does not exists
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Removed open record flag from "/Experiment/Run Parameters"
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Experiment/Run Parameters"
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Trigger/Common"
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Trigger/Common"
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Trigger/Statistics"
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Trigger/Statistics"
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Scaler/Common"
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Scaler/Common"
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Scaler/Statistics"
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Scaler/Statistics"
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Corrected 5 ODB entries
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Deleted entry '/System/Clients/27199' for client 'Analyzer' because it is not connected to ODB
+Thu Nov 30 14:54:26 2017 [ODBEdit,ERROR] [midas.c:1738:cm_set_client_info,ERROR] cannot set client name
+Thu Nov 30 14:54:26 2017 [ODBEdit,INFO] Client 'Analyzer' on buffer 'SYSMSG' removed by bm_open_buffer because process pid 27199 does not exist
+Thu Nov 30 14:54:29 2017 [ODBEdit,ERROR] [odb.c:1223:db_open_database,ERROR] Removed ODB client 'ODBEdit', index 0 because process pid 27266 does not exists
+Thu Nov 30 14:54:29 2017 [ODBEdit,ERROR] [midas.c:1738:cm_set_client_info,ERROR] cannot set client name
+Thu Nov 30 14:54:29 2017 [ODBEdit,INFO] Client 'unknown' on buffer 'SYSMSG' removed by bm_open_buffer because process pid 27266 does not exist
+Thu Nov 30 14:54:46 2017 [ODBEdit,ERROR] [odb.c:1223:db_open_database,ERROR] Removed ODB client 'ODBEdit', index 0 because process pid 27267 does not exists
+Thu Nov 30 14:54:46 2017 [ODBEdit,ERROR] [midas.c:1738:cm_set_client_info,ERROR] cannot set client name
+Thu Nov 30 14:54:46 2017 [ODBEdit,INFO] Client 'unknown' on buffer 'SYSMSG' removed by bm_open_buffer because process pid 27267 does not exist
+Thu Nov 30 14:54:53 2017 [ODBEdit,ERROR] [odb.c:1223:db_open_database,ERROR] Removed ODB client 'ODBEdit', index 0 because process pid 27367 does not exists
+Thu Nov 30 14:54:53 2017 [ODBEdit,ERROR] [midas.c:1738:cm_set_client_info,ERROR] cannot set client name
+Thu Nov 30 14:54:53 2017 [ODBEdit,INFO] Client 'unknown' on buffer 'SYSMSG' removed by bm_open_buffer because process pid 27367 does not exist
+Thu Nov 30 15:02:53 2017 [ODBEdit,ERROR] [odb.c:1223:db_open_database,ERROR] Removed ODB client 'ODBEdit', index 0 because process pid 27370 does not exists
+Thu Nov 30 15:02:53 2017 [ODBEdit,ERROR] [midas.c:1738:cm_set_client_info,ERROR] cannot set client name
+Thu Nov 30 15:02:53 2017 [ODBEdit,INFO] Client 'unknown' on buffer 'SYSMSG' removed by bm_open_buffer because process pid 27370 does not exist
+Thu Nov 30 15:03:56 2017 [ODBEdit,INFO] Program ODBEdit on host PC started
+Thu Nov 30 15:04:37 2017 [ODBEdit,INFO] Program ODBEdit on host PC stopped
+Thu Nov 30 15:04:51 2017 [Analyzer,INFO] Program Analyzer on host PC started
+Thu Nov 30 15:04:51 2017 [Analyzer,ERROR] [odb.c:9460:db_open_record,ERROR] struct size mismatch for "/" (expected size: 80, size in ODB: 0)
+Thu Nov 30 15:04:51 2017 [Analyzer,ERROR] [main.c:323:analyzer_init,ERROR] Cannot open "/Analyzer/Parameters/GLOBAL" tree in ODB
+Thu Nov 30 15:04:51 2017 [Analyzer,ERROR] [midas.c:1914:,ERROR] cm_disconnect_experiment not called at end of program
+Thu Nov 30 15:05:05 2017 [Analyzer,ERROR] [odb.c:1223:db_open_database,ERROR] Removed ODB client 'Analyzer', index 0 because process pid 28165 does not exists
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed open record flag from "/Experiment/Run Parameters"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed exclusive access mode from "/Experiment/Run Parameters"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed open record flag from "/Analyzer/Parameters/main"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed exclusive access mode from "/Analyzer/Parameters/main"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed open record flag from "/Analyzer/Trigger/Common"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed exclusive access mode from "/Analyzer/Trigger/Common"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed open record flag from "/Analyzer/Trigger/Statistics"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed exclusive access mode from "/Analyzer/Trigger/Statistics"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed open record flag from "/Analyzer/Scaler/Common"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed exclusive access mode from "/Analyzer/Scaler/Common"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed open record flag from "/Analyzer/Scaler/Statistics"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Removed exclusive access mode from "/Analyzer/Scaler/Statistics"
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Corrected 6 ODB entries
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Deleted entry '/System/Clients/28165' for client 'Analyzer' because it is not connected to ODB
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Program Analyzer on host PC started
+Thu Nov 30 15:05:05 2017 [Analyzer,INFO] Client 'Analyzer' on buffer 'SYSMSG' removed by bm_open_buffer because process pid 28165 does not exist
+Thu Nov 30 15:05:05 2017 [Analyzer,ERROR] [odb.c:9460:db_open_record,ERROR] struct size mismatch for "/" (expected size: 80, size in ODB: 0)
+Thu Nov 30 15:05:05 2017 [Analyzer,ERROR] [main.c:323:analyzer_init,ERROR] Cannot open "/Analyzer/Parameters/GLOBAL" tree in ODB
+Thu Nov 30 15:05:05 2017 [Analyzer,ERROR] [midas.c:1914:,ERROR] cm_disconnect_experiment not called at end of program
+Thu Nov 30 15:05:16 2017 [ODBEdit,ERROR] [odb.c:1223:db_open_database,ERROR] Removed ODB client 'Analyzer', index 0 because process pid 28223 does not exists
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed open record flag from "/Experiment/Run Parameters"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Experiment/Run Parameters"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Parameters/main"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Parameters/main"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Trigger/Common"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Trigger/Common"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Trigger/Statistics"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Trigger/Statistics"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Scaler/Common"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Scaler/Common"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Scaler/Statistics"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Scaler/Statistics"
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Corrected 6 ODB entries
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Deleted entry '/System/Clients/28223' for client 'Analyzer' because it is not connected to ODB
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Program ODBEdit on host PC started
+Thu Nov 30 15:05:16 2017 [ODBEdit,INFO] Client 'Analyzer' on buffer 'SYSMSG' removed by bm_open_buffer because process pid 28223 does not exist
+Tue Mar 20 14:42:44 2018 [ODBEdit,INFO] Program ODBEdit on host PC started
+Tue Mar 20 14:42:57 2018 [ODBEdit,INFO] Program ODBEdit on host PC stopped
+Tue Mar 20 14:43:07 2018 [ODBEdit,INFO] Program ODBEdit on host PC started
+Tue Mar 20 14:43:42 2018 [ODBEdit,ERROR] [odb.c:5869:db_load,ERROR] file "basic.pdb" not found
