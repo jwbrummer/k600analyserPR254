@@ -245,7 +245,7 @@ const int NR_OF_TDCS=8;
 /*--------Histogramming Data Structures ---------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
 
-TFile *f1=new TFile("output.root","RECREATE");
+TFile *f1=new TFile("~/Desktop/output.root","RECREATE");
 TTree *t1=new TTree("DATA","K600 data");
 
 static TH1F *hX1_lut, *hX2_lut, *hU1_lut, *hU2_lut;
