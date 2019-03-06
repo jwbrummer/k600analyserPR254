@@ -1,0 +1,15 @@
+What to do when pulling the analyser onto another PC to get it running:
+
+Clone analyser and pull
+The path to config.cfg in Parameters.c
+Where the output.root file should be created
+The path to the TDC offsets in config.cfg
+The path to the ADC calibration file in config.cfg
+Load the ODB
+Make ODB
+Edit experim.h
+make analyser
+Paths in the sorter you're going to use.
+Paths in the triton-tree generator file.
+
+That's all I can think of for now.
