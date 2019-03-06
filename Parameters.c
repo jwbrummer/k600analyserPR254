@@ -81,7 +81,7 @@ void ParameterInit()
   PulseLimitsInit();
   ADCInit();
   QDCInit();
-  TDCInit();
+  //TDCInit();
   PrintParameters();
   printf("Finished initialising parameters - to the sorting!\n");
 }
@@ -161,7 +161,7 @@ void MMMTDCChannelsInit(int det, std::string side,int start, int stop)//If there
     }
   else
     {
-      printf("ADC: Detector number is higher than the number of MMM detectors - skipped enabling this detector\n");
+      printf("TDC: Detector number is higher than the number of MMM detectors - skipped enabling this detector\n");
     }
 }
 
@@ -379,6 +379,19 @@ void CalibrationParametersInit()
 }
 
 /*-------------------------------------------------*/
+void TDCCalibrationParametersInit()
+{
+  printf("\n TDCCalibrationParametersInit\n"); 
+  
+  TDCOffsets = new double[128*TDCModules];
+  
+  for(int i=0;i<128*TDCModules;i++)
+  {
+    TDCOffsets[i] = 0;//printf("TDCOffsets[%d]: %f\n",i,TDCOffsets[i]);
+  }
+}
+
+/*-------------------------------------------------*/
 void ReadCalibrationParameters(std::string CalibFile)
 {
   printf("ReadCalibrationParameters using file %s\n",CalibFile.c_str());
@@ -534,7 +547,8 @@ void TDCInit()
 {
   printf("TDCInit\n");
   TDCOffsets = new double[128*TDCModules];
-  TDCOffsetsClear();
+  //printf("128*TDCModules: ",128*TDCModules);
+  //TDCOffsetsClear();
 }
 
 void TDCOffsetsClear()
@@ -547,11 +561,14 @@ void TDCOffsetsClear()
 
 void SetTDCChannelOffset(int channel, double offset)
 {
+  //printf("SetTDCChannelOffset: %d \t %g\n",channel,offset);
   TDCOffsets[channel] = offset;
 }
 
 void ReadTDCOffsets(std::string OffsetsFile)
 {
+  printf("Read TDC Offsets\n");
+  TDCOffsetsClear();
   bool Reading = true;
 
   if(OffsetsFile.compare(0,6,"ignore") == 0)
@@ -579,7 +596,7 @@ void ReadTDCOffsets(std::string OffsetsFile)
 		  channel = atoi(LineBuffer.c_str());
 		  input >> LineBuffer;
 		  offset = atof(LineBuffer.c_str());
-		  printf("TDC Channel: %d\tOffset: %f\t",channel,offset);
+		  printf("TDC Channel: %d\tOffset: %f\n",channel,offset);
 		  if(channel!=-1)SetTDCChannelOffset(channel, offset);
 		}
 	    }
@@ -661,6 +678,7 @@ void ReadConfiguration()
 		  input >> LineBuffer;
 		  TDCModules = atoi(LineBuffer.c_str());
 		  TDCsize = 128*TDCModules;
+		  TDCCalibrationParametersInit();
 		  ChannelCounter = new int[128*TDCModules];
 		  GoodChannelCounter = new int[128*TDCModules];
 		}
@@ -969,13 +987,13 @@ void ReadConfiguration()
 	      printf("\n GATEAU wireplane: %d\t",atoi(LineBuffer.c_str()));
 	      plane = atoi(LineBuffer.c_str());
 	      input >> LineBuffer;
-	      printf("Gateau Sector: %d\t",LineBuffer.c_str());
+	      printf("Gateau Sector: %s\t",LineBuffer.c_str());
 	      sector = atoi(LineBuffer.c_str());
 	      input >> LineBuffer;
-	      printf("Start: %d\t",LineBuffer.c_str());
+	      printf("Start: %s\t",LineBuffer.c_str());
 	      start = atoi(LineBuffer.c_str());
 	      input >> LineBuffer;
-	      printf("Stop: %d\t",LineBuffer.c_str());
+	      printf("Stop: %s\t",LineBuffer.c_str());
 	      stop = atoi(LineBuffer.c_str());
 	      
 	      GateauSetChannelLimits(plane,sector,start,stop);
@@ -1236,5 +1254,8 @@ void PrintParameters()
   printf("ADCsize: %d\n",ADCsize);
   printf("TDCModules: %d\n",TDCModules);
   printf("TDCsize: %d\n",TDCsize);
+
+  //for(int i=0;i<128*TDCModules;i++)
+  //printf("TDCChannel %d \t TDCOffsets %g\n",i,TDCOffsets[i]);
 }
 

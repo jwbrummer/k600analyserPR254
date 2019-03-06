@@ -20,6 +20,8 @@ void SiliconData::PrintEvent()//Print out the 'proper' information about an even
     printf("Hit number: %d\n",i);
     printf("Energy: %g\n",GetEnergy(i));
     printf("Front Energy: %g\n",GetEnergyFront(i));
+    printf("Silicon Time: %g\n",GetTime(i));
+    printf("Silicon Time Offset: %g\n",GetOffsetTime(i));
   }
 }
 

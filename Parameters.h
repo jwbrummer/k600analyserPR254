@@ -48,6 +48,7 @@ void CloverADCChannelsInit(int det, int start, int stop);
 void CloverTDCChannelsInit(int det, int start, int stop);
 
 void CalibrationParametersInit();
+void TDCCalibrationParametersInit();
 void PulseLimitsInit();
 
 void ADCInit();
@@ -57,6 +58,7 @@ void ADCClear();
 void ReadCalibrationParameters(std::string CalibFile);
 
 void TDCInit();
+//void TDCClear();
 void TDCOffsetsClear();
 void ReadTDCOffsets(std::string OffsetsFile);
 

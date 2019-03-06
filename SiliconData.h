@@ -83,7 +83,8 @@ public :
   double GetEnergy(int i)		{return SiliconEnergy.at(i);}
   double GetTheta(int i)		{return SiliconTheta.at(i);}
   double GetPhi(int i)			{return SiliconPhi.at(i);}
-  double GetTime(int i)			{return SiliconTime.at(i);}  
+  double GetTime(int i)			{return SiliconTime.at(i);}
+  double GetOffsetTime(int i)           {return SiliconTimeOffset.at(i);}
 
   double GetEnergyFront(int i)		{return EnergyFront.at(i);}
   
