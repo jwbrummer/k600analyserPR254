@@ -1,0 +1,10 @@
+Deleting *.o, *.d, *.so, analyzer and the hidden files: you have to make the analyser again.
+It will still give you a runtime error: struct size mismatch - 80 expected 0 found.
+
+odbedit
+load PR254-database.odb
+make
+exit
+
+Open experim.h
+Replace all const char with char.
