@@ -1,0 +1,9 @@
+To remove files from Github and the local folder:
+git rm file1.txt
+git commit -m "remove file1.txt"
+git push origin branch_name  
+
+Only remove files from Github:
+git rm --cached file1.txt
+git commit -m "remove file1.txt"
+git push origin branch_name  
