@@ -519,11 +519,13 @@ void LoadExCorrection(int run)
 /*-------------------------------------------------*/
 void SetADCChannelCalibration(int channel, double offset, double gain)
 {
+  //printf("Channel: %d\t Offset: %g\t Gain: %g\n",channel,offset,gain);
   if(channel<ADCsize)
   {
     ADCOffsets[channel] = offset;
     ADCGains[channel]   = gain;
   }
+  else printf("Invalid ADC channel number\n");
 }
 
 /*-------------------------------------------------*/
@@ -1257,5 +1259,6 @@ void PrintParameters()
 
   //for(int i=0;i<128*TDCModules;i++)
   //printf("TDCChannel %d \t TDCOffsets %g\n",i,TDCOffsets[i]);
+  for(int i=0;i<32*ADCModules;i++)printf("ADCOffsets: %g \t ADCGains: %g\n",ADCOffsets[i],ADCGains[i]);
 }
 

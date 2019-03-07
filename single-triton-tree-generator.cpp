@@ -9,7 +9,7 @@ void single_triton_tree_generator(int runNum)
       sprintf(rootNum,"/home/wiggert/Desktop/triton-trees/triton_tree_run%d.root",runNum);
       TFile *fout = new TFile(rootNum,"RECREATE");
       char cutRun[256];
-      sprintf(cutRun,".x /home/wiggert/Documents/pr254-new/codes/pid/CUTpad1vstofRun%d.C",runNum);
+      sprintf(cutRun,".x /home/wiggert/Programs/k600analyserPR254/pid/CUTpad1vstofRun%d.C",runNum);
       gROOT->ProcessLine(cutRun); 
       char cutName[256];
       sprintf(cutName,"CUTpad1vstofRun%d",runNum);

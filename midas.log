@@ -1092,3 +1092,24 @@ Wed Mar  6 13:25:30 2019 [ODBEdit,INFO] Program ODBEdit on host PC stopped
 Wed Mar  6 13:26:12 2019 [ODBEdit,INFO] Program ODBEdit on host PC started
 Wed Mar  6 13:26:15 2019 [ODBEdit,INFO] Program ODBEdit on host PC stopped
 Wed Mar  6 13:26:37 2019 [ODBEdit,INFO] Program ODBEdit on host PC started
+Wed Mar  6 14:53:37 2019 [Analyzer,INFO] Program Analyzer on host PC started
+Wed Mar  6 14:53:37 2019 [Analyzer,ERROR] [odb.c:9460:db_open_record,ERROR] struct size mismatch for "/" (expected size: 80, size in ODB: 0)
+Wed Mar  6 14:53:37 2019 [Analyzer,ERROR] [main.c:323:analyzer_init,ERROR] Cannot open "/Analyzer/Parameters/GLOBAL" tree in ODB
+Wed Mar  6 14:53:37 2019 [Analyzer,ERROR] [midas.c:1914:,ERROR] cm_disconnect_experiment not called at end of program
+Wed Mar  6 14:53:59 2019 [ODBEdit,ERROR] [odb.c:1223:db_open_database,ERROR] Removed ODB client 'Analyzer', index 0 because process pid 30039 does not exists
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed open record flag from "/Experiment/Run Parameters"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed exclusive access mode from "/Experiment/Run Parameters"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Parameters/main"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Parameters/main"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Trigger/Common"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Trigger/Common"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Trigger/Statistics"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Trigger/Statistics"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Scaler/Common"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Scaler/Common"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed open record flag from "/Analyzer/Scaler/Statistics"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Removed exclusive access mode from "/Analyzer/Scaler/Statistics"
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Corrected 6 ODB entries
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Deleted entry '/System/Clients/30039' for client 'Analyzer' because it is not connected to ODB
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Program ODBEdit on host PC started
+Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Client 'Analyzer' on buffer 'SYSMSG' removed by bm_open_buffer because process pid 30039 does not exist

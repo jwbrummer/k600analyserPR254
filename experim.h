@@ -17,7 +17,7 @@
                 tation which can be used in the db_create_record function
                 to setup an ODB structure which matches the C structure.
 
-  Created on:   Wed Mar  6 13:26:55 2019
+  Created on:   Wed Mar  6 14:54:16 2019
 
 \********************************************************************/
 
@@ -176,22 +176,22 @@ NULL }
 #define TRIGGER_COMMON_DEFINED
 
 typedef struct {
-  char      format[80];
   WORD      event_id;
   INT       type;
   INT       log_history;
   char      frontend_name[256];
   WORD      trigger_mask;
+  char      format[80];
 } TRIGGER_COMMON;
 
 #define TRIGGER_COMMON_STR(_name) char *_name[] = {\
 "[.]",\
-"Format = STRING : [80] MIDAS",\
 "Event ID = WORD : 0",\
 "Type = INT : 2",\
 "Log history = INT : 0",\
 "Frontend name = STRING : [256] K600 frontend",\
 "Trigger mask = WORD : 0",\
+"Format = STRING : [80] MIDAS",\
 "",\
 NULL }
 
@@ -202,12 +202,12 @@ NULL }
 #define SCALER_COMMON_DEFINED
 
 typedef struct {
-  char      format[8];
   WORD      event_id;
   INT       type;
   WORD      trigger_mask;
   char      buffer[32];
   INT       source;
+  char      format[8];
   BOOL      enabled;
   INT       read_on;
   INT       period;
@@ -221,12 +221,12 @@ typedef struct {
 
 #define SCALER_COMMON_STR(_name) char *_name[] = {\
 "[.]",\
-"Format = STRING : [8] MIDAS",\
 "Event ID = WORD : 2",\
 "Type = INT : 33",\
 "Trigger mask = WORD : 0",\
 "Buffer = STRING : [32] SYSTEM",\
 "Source = INT : 0",\
+"Format = STRING : [8] MIDAS",\
 "Enabled = BOOL : y",\
 "Read on = INT : 377",\
 "Period = INT : 1000",\
