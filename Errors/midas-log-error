@@ -1,0 +1,8 @@
+If the analyser complains that it cant find or access the correct folder to write midas.log to because the path is 
+unavailable, the path might be set to someone else's PC or to a folder that doesn't exist anymore.
+
+Simply do:
+odbedit
+cd Logger
+
+And set "Data dir" to the directory that contains the analyser folder.
