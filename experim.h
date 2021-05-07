@@ -17,7 +17,7 @@
                 tation which can be used in the db_create_record function
                 to setup an ODB structure which matches the C structure.
 
-  Created on:   Wed Mar  6 14:54:16 2019
+  Created on:   Wed Apr  1 12:21:40 2020
 
 \********************************************************************/
 
@@ -32,48 +32,6 @@ typedef struct {
 "Comment = STRING : [80] Analysis",\
 "",\
 NULL }
-
-#ifndef EXCL_MAIN
-
-#define MAIN_PARAM_DEFINED
-
-typedef struct {
-  INT       x1_driftt_low;
-  INT       x1_driftt_hi;
-  INT       x2_driftt_low;
-  INT       u1_driftt_low;
-  INT       u2_driftt_low;
-  INT       x2_driftt_hi;
-  INT       u2_driftt_hi;
-  INT       u1_driftt_hi;
-  INT       lowtof;
-  INT       hitof;
-  INT       lowpad1;
-  INT       lowpad2;
-  INT       hipad1;
-  INT       hipad2;
-} MAIN_PARAM;
-
-#define MAIN_PARAM_STR(_name) char *_name[] = {\
-"[.]",\
-"x1_driftt_low = INT : 6100",\
-"x1_driftt_hi = INT : 8050",\
-"x2_driftt_low = INT : 6100",\
-"u1_driftt_low = INT : 6100",\
-"u2_driftt_low = INT : 6100",\
-"x2_driftt_hi = INT : 8050",\
-"u2_driftt_hi = INT : 8050",\
-"u1_driftt_hi = INT : 8050",\
-"lowtof = INT : 2000",\
-"hitof = INT : 6000",\
-"lowpad1 = INT : 1",\
-"lowpad2 = INT : 0",\
-"hipad1 = INT : 4096",\
-"hipad2 = INT : 4096",\
-"",\
-NULL }
-
-#endif
 
 #ifndef EXCL_GLOBAL
 
@@ -105,8 +63,8 @@ typedef struct {
 #define GLOBAL_PARAM_STR(_name) char *_name[] = {\
 "[.]",\
 "misswires = INT : 2",\
-"z_x1x2 = FLOAT : 243",\
-"x_x1x2 = FLOAT : 270",\
+"z_x1x2 = FLOAT : 263",\
+"x_x1x2 = FLOAT : 370",\
 "min_x_wires = INT : 3",\
 "min_u_wires = INT : 3",\
 "max_x_wires = INT : 9",\
@@ -163,6 +121,48 @@ typedef struct {
 "lowtof = INT : 2000",\
 "hitof = INT : 7000",\
 "lowpad1 = INT : 0",\
+"lowpad2 = INT : 0",\
+"hipad1 = INT : 4096",\
+"hipad2 = INT : 4096",\
+"",\
+NULL }
+
+#endif
+
+#ifndef EXCL_MAIN
+
+#define MAIN_PARAM_DEFINED
+
+typedef struct {
+  INT       x1_driftt_low;
+  INT       x1_driftt_hi;
+  INT       x2_driftt_low;
+  INT       u1_driftt_low;
+  INT       u2_driftt_low;
+  INT       x2_driftt_hi;
+  INT       u2_driftt_hi;
+  INT       u1_driftt_hi;
+  INT       lowtof;
+  INT       hitof;
+  INT       lowpad1;
+  INT       lowpad2;
+  INT       hipad1;
+  INT       hipad2;
+} MAIN_PARAM;
+
+#define MAIN_PARAM_STR(_name) char *_name[] = {\
+"[.]",\
+"x1_driftt_low = INT : 6100",\
+"x1_driftt_hi = INT : 8050",\
+"x2_driftt_low = INT : 6100",\
+"u1_driftt_low = INT : 6100",\
+"u2_driftt_low = INT : 6100",\
+"x2_driftt_hi = INT : 8050",\
+"u2_driftt_hi = INT : 8050",\
+"u1_driftt_hi = INT : 8050",\
+"lowtof = INT : 2000",\
+"hitof = INT : 6000",\
+"lowpad1 = INT : 1",\
 "lowpad2 = INT : 0",\
 "hipad1 = INT : 4096",\
 "hipad2 = INT : 4096",\

@@ -1113,3 +1113,41 @@ Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Corrected 6 ODB entries
 Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Deleted entry '/System/Clients/30039' for client 'Analyzer' because it is not connected to ODB
 Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Program ODBEdit on host PC started
 Wed Mar  6 14:53:59 2019 [ODBEdit,INFO] Client 'Analyzer' on buffer 'SYSMSG' removed by bm_open_buffer because process pid 30039 does not exist
+17:14:20.008 2020/03/31 [ODBEdit,INFO] Program ODBEdit on host localhost started
+17:14:26.990 2020/03/31 [ODBEdit,INFO] Program ODBEdit on host localhost stopped
+17:14:35.003 2020/03/31 [ODBEdit,INFO] Program ODBEdit on host localhost started
+17:14:37.589 2020/03/31 [ODBEdit,INFO] Reloading RPC hosts access control list via hotlink callback
+17:18:22.427 2020/03/31 [ODBEdit,INFO] Reloading RPC hosts access control list via hotlink callback
+17:18:31.402 2020/03/31 [ODBEdit,INFO] Program ODBEdit on host localhost stopped
+17:19:05.744 2020/03/31 [ODBEdit,INFO] Program ODBEdit on host localhost started
+17:19:20.673 2020/03/31 [ODBEdit,INFO] Program ODBEdit on host localhost stopped
+12:17:19.185 2020/04/01 [ODBEdit,INFO] Program ODBEdit on host localhost started
+12:17:28.215 2020/04/01 [ODBEdit,INFO] Program ODBEdit on host localhost stopped
+12:17:38.374 2020/04/01 [ODBEdit,INFO] Program ODBEdit on host localhost started
+12:21:17.130 2020/04/01 [ODBEdit,INFO] Program ODBEdit on host localhost stopped
+12:21:22.970 2020/04/01 [ODBEdit,INFO] Program ODBEdit on host localhost started
+12:21:24.910 2020/04/01 [ODBEdit,INFO] Reloading RPC hosts access control list via hotlink callback
+12:21:32.538 2020/04/01 [ODBEdit,INFO] Program ODBEdit on host localhost stopped
+12:21:35.869 2020/04/01 [ODBEdit,INFO] Program ODBEdit on host localhost started
+12:21:38.254 2020/04/01 [ODBEdit,INFO] Reloading RPC hosts access control list via hotlink callback
+12:21:50.234 2020/04/01 [ODBEdit,INFO] Program ODBEdit on host localhost stopped
+12:52:45.640 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost started
+12:52:46.141 2020/04/01 [Analyzer,INFO] Set run number 3031 in ODB
+12:52:48.542 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost stopped
+12:55:46.006 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost started
+12:55:46.498 2020/04/01 [Analyzer,INFO] Set run number 3031 in ODB
+12:56:43.820 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost stopped
+12:56:43.841 2020/04/01 [Analyzer1,INFO] Program Analyzer1 on host localhost started
+12:56:44.536 2020/04/01 [Analyzer1,INFO] Set run number 3031 in ODB
+12:56:46.950 2020/04/01 [Analyzer1,INFO] Program Analyzer1 on host localhost stopped
+12:57:07.356 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost started
+12:57:07.849 2020/04/01 [Analyzer,INFO] Set run number 3031 in ODB
+13:34:14.743 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost stopped
+13:44:19.538 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost started
+13:44:20.040 2020/04/01 [Analyzer,INFO] Set run number 3025 in ODB
+14:27:32.511 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost started
+14:27:32.835 2020/04/01 [Analyzer,INFO] Set run number 3039 in ODB
+15:03:40.501 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost stopped
+15:04:49.738 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost started
+15:04:50.061 2020/04/01 [Analyzer,INFO] Set run number 3125 in ODB
+15:15:50.479 2020/04/01 [Analyzer,INFO] Program Analyzer on host localhost stopped
